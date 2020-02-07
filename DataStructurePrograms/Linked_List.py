@@ -2,7 +2,8 @@
 ------------Linked List.------------
 ---------------------------------------"""
 
-from Fellowship_programs.DataStructurePrograms import Node
+from Fellowship_programs.DataStructurePrograms\
+    import Node
 class Linkedlist:
      #the 1st element of the list is called Head
      #intilizing head = None
@@ -26,6 +27,7 @@ class Linkedlist:
              while n.next != None:
                  n = n.next
              n.next = node
+
 
      # creating a function to show the elements
      def show(self):
@@ -96,6 +98,7 @@ class Linkedlist:
          else:
              return False
      # pop function to remove an element
+
      def pop(self,word):
          #finding the index by using IndexOf function
          poss = Linkedlist.indexOf(self,word)
