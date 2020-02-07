@@ -16,20 +16,21 @@ class Queue:
         if self.rare == None:
             self.front = self.rare = node
         # else given data is assigned next to the rare element
-        else:
-            self.rare,self.rare.next = node,None
-            self.count +=1
+        self.rare.next = node
+        self.rare = node
+        self.count +=1
     # Creating a function for dequeue
     def dequeue(self):
         # if the queue is empty, there is nothing to deque it return queue is empty
         if Queue.isEmpty(self):
             print("Queue is empty")
             return "queue is empty"
-        elif self.front.next == None:
-            self.front = None
         else:
-            self.front = self.front.nextprint(f'{deposit} amount is deposited \n --- Thank you ---')
-        self.count -=1
+            if self.front.next == None:
+                self.front = None
+            else:
+                self.front = self.front.next
+            self.count -=1
     # creating a function to check that the queue is empty or not
     def isEmpty(self):
         # if there is no elements returns returns True
@@ -44,3 +45,15 @@ class Queue:
             print("error occured restart the program")
         else:
             return self.count
+    def show(self):
+        # traversing from the front element to end
+        # if there is no elements front elemet is None
+        # storing the front element into a temperory variable
+        temp = self.front
+        if temp == None:
+            print("None")
+        else:
+            while temp.next is not None:
+                print(temp.data)
+                temp = temp.next
+            print(temp.data)

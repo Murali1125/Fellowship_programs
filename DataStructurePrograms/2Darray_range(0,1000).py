@@ -6,6 +6,7 @@
 --dimension represents the prime numbers in that range
 --------------------------------------------------------------------"""
 from Fellowship_programs.DataStructurePrograms.Array2D import prime
+
 print("range is 0 to 1000")
 # creating object for array2D class
 obj = prime()

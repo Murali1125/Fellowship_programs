@@ -26,7 +26,7 @@ class Stack:
             self.count +=1
         return  self.top.data
     # Creating a function to pop the element
-    def pop(self,data):
+    def pop(self):
         # if the stack is empty
         if Stack.isEmpty(self):
             print("Index out of Boundary ")
@@ -41,14 +41,14 @@ class Stack:
     #Creating a function to check the stack isEmpty or not
     #it returns True or False
     def isEmpty(self):
-        if slef.top != None:
+        if self.top is not None:
             return True
         else:
             return False
     # Creating function to show the elements
     def show(self):
         # Traversing top element to bottom element and printing them
-        st = slef.top
+        st = self.top
         while st != None:
             print(st.data,end=" ")
             st = st.next

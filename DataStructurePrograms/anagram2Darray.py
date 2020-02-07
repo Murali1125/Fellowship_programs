@@ -20,9 +20,9 @@ for i in lis:
     if i <= 10:
         non_anagram.append(i)
         continue
-    # getting the anagram number of the prime numbers
+    # getting anagram number of the prime numbers
     ana = prm.anagram(i)
-    #the anagram of the prime number is also prime then add to anagram prime number list
+    # if anagram of the prime number is also prime then add to anagram prime number list
     if prm.prime_check(ana) and 0<= ana<= 1000:
         ana_lis.append(i)
     # else add non anagram prime numbers list

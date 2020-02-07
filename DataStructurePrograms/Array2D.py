@@ -1,10 +1,7 @@
 """--------------------------------------------------------------------
--->Take a range of 0 - 1000 Numbers and find the Prime numbers in that
---range. Store the prime numbers in a 2D Array, the first dimension
---represents the range 0-100, 100-200, and so on. While the second
---dimension represents the prime numbers in that range
+----------- 2D Array prime numbers Class ------------------------------
 --------------------------------------------------------------------"""
-import numpy as np
+
 class prime:
 
     def __init__(self):
@@ -42,6 +39,9 @@ class prime:
             print(self.list[i])
     #function for to check the num is prime or not
     def prime_check(self,num):
+        # if the num is < 2 its not a prime number
+        if num < 2:
+            return False
         # if the given num is 2 return true since 2 is a prime number
         if num == 2:
             return True
