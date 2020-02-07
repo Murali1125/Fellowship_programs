@@ -13,9 +13,9 @@ class calender:
         y0 = y - (14 - m) / 12
         x = y0 + y0 / 4 - y0 / 100 + y0 / 400
         m0 = m + 12 * ((14 - m) / 12) - 2
-        d0 = int((d + x + (31 * m0 / 12))) % 7
-        # days = {1: "Sunday", 2: "Monday", 3: "Tuesday", 4: "Wednesday", 5: "Thursday", 6: "Friday", 7: "Saturday"}
-        # print(days[d0])
+        d0 = (d + x + (31 * m0 / 12)) % 7
+        days = {1: "Sunday", 2: "Monday", 3: "Tuesday", 4: "Wednesday", 5: "Thursday", 6: "Friday", 7: "Saturday"}
+        print(days[round(d0)])
         return d0
     def days(self,year,month):
         if month in (1,3,5,7,8,10,12):
@@ -29,6 +29,7 @@ class calender:
                 return 28
         else:
             print("wrong input of the month \n the month should be in range 01 to 12 \n you given{}".format(month))
+            exit()
     # function to check the given yr is leap year or not if yes returns True else return False
     def leap_year(self,year):
         if  year % 4 == 0:
@@ -54,18 +55,22 @@ class calender:
         # in the fallowing for-loop i represent the weak of the month
         weak_days = ['Su','Mo','Tu','We','Th','Fr','Sa']
         month.append(weak_days)
-        for i in range(0,5):
+        for i in range(0,6):
+            # day in the month is exceed than actual days in the month break the loop
+            if (days < day):
+                break
             # creating temporary list to store the days of the a week
             temp = []
             # in the fallowing for-loop j represents the day of the weak
             for j in range(0,7):
                 # if the day iterator > max days of the month break the loop
-                if day > days:
-                   temp.append("")
-                if i == 0 and j < d:
+                if  (days < day):
+                   temp.append("  ")
+                   continue
+                elif i == 0 and j < d:
                     temp.append("  ")
                     continue
-                if day < 10:
+                elif day < 10 :
                     temp.append(f'0{day}')
                 else:
                     temp.append(f'{day}')
