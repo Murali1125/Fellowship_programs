@@ -8,27 +8,10 @@ class prime:
         self.list = []
     # creating a function for prime numbers
     def prime(self,r1,r2):
+        # an empty list to store the prime number the range r1 to r2
         lis= []
-        #finding the prime numbers in the range r1 and r2
-        if r1 <= 3:
-            lis.append(2)
-            lis.append(3)
-            r1 = 4
-        elif r1 <=2:
-            lis.append(2)
-            r1 = 4
         for i in range(r1,r2+1):
-            # taking the one temperary variable to check how many factors have the number in i
-            # and initialize the variable as 0
-            count = 0
-            # lets check the number in i is prime or not
-            for j in range(2,i//2):
-                if i%j == 0:
-                    count +=1
-                    break
-            # if count = 0 means it have no any facators other than 1 and itself
-            # so it is a prime number. add the number into list
-            if count == 0:
+            if prime.prime_check(self,i):
                 lis.append(i)
         self.list.append(lis)
         return lis
