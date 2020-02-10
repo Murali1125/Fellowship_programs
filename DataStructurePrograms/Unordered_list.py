@@ -7,10 +7,10 @@ and if it found  then remove the word  from the list . In the end save the List 
 from Fellowship_programs.DataStructurePrograms import Linked_List
 
 # Driver Program for UnOrdered List
-# creating Object for Linked List
+#creating Object for Linked List
 list = Linked_List.Linkedlist()
 # Open and read the file
-f = open('./Fellowship_programs/DataStructurePrograms/unoderedlist.txt', 'r')
+f = open('UnorderdList.txt', 'r')
 file = f.read().split(" ")
 f.close()
 #reading word from the user
@@ -32,24 +32,23 @@ if result:
     #after removing the element
     list.show()
     print("element removed at ",index)
-    # Delete the word form the file by over writing.
-    f = open('./Fellowship_programs/DataStructurePrograms/unoderedlist.txt', 'w')
+    #Delete the word form the file by over writting.
+    f = open('Unoderedlist.txt', 'w')
     f.write('')
     f.close()
     length = list.size()
-    f = open('./Fellowship_programs/DataStructurePrograms/unoderedlist.txt', 'a+')
+    f = open('UnorderdList.txt', 'a+')
     for i in range(0, length):
         f.write(" "+list.index(i))
     f.close()
 else:
     list.add(word)
     print("After searching element in the list ")
-    # after adding the elementorderedlist
+    # after adding the element Unordered list
     list.show()
-
     # adding the word to file
-    # open the file in append mode
-    f = open('./Fellowship_programs/DataStructurePrograms/unoderedlist.txt', 'a+')
+    #open the file in append mode
+    f = open('UnorderdList.txt', 'a+')
     f.write(" "+word)
     f.close()
 
