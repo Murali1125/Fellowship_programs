@@ -14,7 +14,6 @@ class BS_tree:
         self.root = None
     # inserting data into the nodes
     def ins(self,data):
-
         # creating a Node and if root is None assign node as root
         if self.root == None:
             self.root = Node(data)
@@ -35,13 +34,13 @@ class BS_tree:
             # if current node right child is None, assigned node as right-child
             if cur_node.right_child == None:
                 cur_node.right_child = Node(data)
-            # else it calls recursively insert method to arrage nodes
+            # else it calls recursively insert method to arrange nodes
             else:
                 BS_tree.insert(self,data,cur_node.right_child)
         # else the value is duplicate, tree cant allow duplicate values
         # print an error msg
         else:
-            print("Duplicae values are not allowed ",data)
+            print("Duplicate values are not allowed ",data)
 
     # Displaying the elements in the tree
     def show(self):

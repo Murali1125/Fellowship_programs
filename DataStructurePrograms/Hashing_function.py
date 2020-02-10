@@ -48,8 +48,8 @@ class HashingList:
         # if the node in that index is none adding the data to that node
         if node is None:
             node = n
-        # else traverse to the end and adding the node to exsiting node
-        # taking tempary vairable to store node
+        # else traverse to the end and adding the node to existing node
+        # taking temporary variable to store node
         else:
             temp = node
             while temp.next is not None:
@@ -70,13 +70,13 @@ class HashingList:
                         print(temp.data,end=",")
                     temp = temp.next
                 print()
-    #print method to store the values into a file
+    # print method to store the values into a file
     def Print(self):
         # creating a file to store the values
         file = open("Hashing_function.txt",'w')
         file.write("")
         file.close()
-        #writing the values int the file
+        # writing the values into the file
         f = open('Hashing_function.txt',"a+")
         for i in range(len(self.node_arr)):
             # reading the node at the index of the node array
@@ -97,14 +97,14 @@ class HashingList:
 # creating an object for HashingList class
 Hash_obj = HashingList()
 count = int(input("enter how many numbers want to insert"))
-#reading the values from the user
+# reading the values from the user
 for i in range(count):
     Hash_obj.insert(int(input(f'value{i+1}')))
 
-#Display the list
+# Display the list
 Hash_obj.display()
 
-#to store the values into a file
+# to store the values into a file
 Hash_obj.Print()
 
 

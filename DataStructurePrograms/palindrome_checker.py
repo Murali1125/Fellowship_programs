@@ -9,14 +9,14 @@ from Fellowship_programs.DataStructurePrograms.DeQueue import DeQueue
 
 # Creating Object for De-queue class
 dequeue = DeQueue()
-# Reading a string from the user to check it is palidrome or not
+# Reading a string from the user to check it is palindrome or not
 string = input("Enter a string ")
-# inserting the charecters of the string into de-queue
+# inserting the characters of the string into de-queue
 for i in string:
     dequeue.insertFront(i)
 size = dequeue.size()
 
-# removing the elements from the de-queue in reverese order and store into another string
+# removing the elements from the de-queue in reverse order and store into another string
 new_str = ""
 for i in range(0,size):
     s = dequeue.removeFront()

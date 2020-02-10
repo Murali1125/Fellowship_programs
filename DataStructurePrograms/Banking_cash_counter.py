@@ -26,7 +26,7 @@ while count>0:
     print(" 5  to see the balance money at the cashier ")
     print(" 6  remaining members in the queue")
     inp = int(input("enter  the choice"))
-    if inp >6 or inp<=0:
+    if inp >6 or inp <=0:
         # if the customer entered wrong choice print an error message
         print("Entered wrong selection, Please choose correct one")
         break

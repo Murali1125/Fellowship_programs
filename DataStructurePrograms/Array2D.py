@@ -20,7 +20,7 @@ class prime:
     def Print(self,itr):
         for i in range(itr):
             print(self.list[i])
-    #function for to check the num is prime or not
+    # function for to check the num is prime or not
     def prime_check(self,num):
         # if the num is < 2 its not a prime number
         if num < 2:

@@ -11,7 +11,7 @@ stk = Stack()
 # Reading the expression from user
 exp = str(input("enter the expression"))
 balance = 0
-# reading the each charecter in the string
+# reading the each character in the string
 for i in exp:
     # if i == '(' it will be pushed in to the stack
     r = stk.push(i)
@@ -19,17 +19,15 @@ for i in exp:
         balance +=1
     elif r == ')':
         balance -=1
+    # balance is < 0 means ')' is misplaced s
     if balance < 0 :
         print(" ')' is in wrong place , Equation is not balanced")
+        exit()
 
 # if  balance == 0  the expression is balanced
-# balance < 0 the expression has excess ')'
 # balance > 0 the expression has excess'('
 if balance == 0 :
     print("the expression is balanced")
-elif balance < 0 :
-    print("the expression is not balanced")
-    print("it have excess ')' ")
 else:
     print("the expression is not balanced")
     print("it have excess '(' ")

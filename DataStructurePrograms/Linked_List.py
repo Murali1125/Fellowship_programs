@@ -1,11 +1,12 @@
 """---------------------------------------
-------------Linked List.------------
+------------Linked List.------------------
+
 ---------------------------------------"""
 
-from Fellowship_programs.DataStructurePrograms.Node import Node
+from Fellowship_programs.DataStructurePrograms import Node
 class Linkedlist:
-     #the 1st element of the list is called Head
-     #intilizing head = None
+     # the 1st element of the list is called Head
+     # intilizing head = None
      def __init__(self):
          self.head = None
 
@@ -26,7 +27,6 @@ class Linkedlist:
              while n.next != None:
                  n = n.next
              n.next = node
-
 
      # creating a function to show the elements
      def show(self):

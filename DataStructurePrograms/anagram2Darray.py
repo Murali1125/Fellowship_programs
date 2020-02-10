@@ -6,14 +6,14 @@
 -------------------------------------------------------------------"""
 
 from Fellowship_programs.DataStructurePrograms.Array2D import prime
-import  numpy as np
+import numpy as np
 # creating abject for prime class
 prm = prime()
 # declaring an empty list to store the anagram prime numbers
 ana_lis=[]
-#declaring an empty list to store the non anagram prime numbers
+# declaring an empty list to store the non anagram prime numbers
 non_anagram = []
-# get the prime numbers inthe range 0 to 1000
+# get the prime numbers in the range 0 to 1000
 lis = prm.prime(0,1000)
 # check that anagram of the number is prime and present in given range or not
 for i in lis:

@@ -9,10 +9,9 @@ from Fellowship_programs.DataStructurePrograms import Linked_List
 # creating an object for linked list
 list = Linked_List.Linkedlist()
 # Reading the values from the file
-f = open('./Fellowship_programs/orderedlist.txt', 'r')
+f = open('orderedlist.txt', 'r')
 file = f.read().split(" ")
 f.close()
-print(file)
 # adding the values into list
 for i in file:
     i = int(i)
@@ -27,12 +26,12 @@ if list.search(num):
     # after removing the element
     list.show()
     print("element removed at ", index)
-    # Delete the word form the file by over writting.
-    f = open('./Fellowship_programs/orderedlist.txt', 'w')
+    # Delete the word form the file by over writing.
+    f = open('orderedlist.txt', 'w')
     f.write('')
     f.close()
     length = list.size()
-    f = open('./Fellowship_programs/orderedlist.txt', 'a+')
+    f = open('orderedlist.txt', 'a+')
     for i in range(0, length):
         if i == length-1:
             f.write("{}".format(list.index(i)))
@@ -47,6 +46,6 @@ else:
 
     # adding the word to file
     # open the file in append mode
-    f = open('./Fellowship_programs/orderedlist.txt', 'a+')
+    f = open('orderedlist.txt', 'a+')
     f.write(" {}".format(num))
     f.close()

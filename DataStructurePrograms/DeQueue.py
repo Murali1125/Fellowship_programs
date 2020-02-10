@@ -46,7 +46,7 @@ class DeQueue:
     def size(self):
         # if the count is < 0 there is an error
         if self.count<0:
-            return print("Error occured please restart the program")
+            return print("Error, please restart the program")
         # else return size = count
         else:
             return self.count

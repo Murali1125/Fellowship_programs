@@ -20,8 +20,8 @@ for i in range(1,1001):
     # if anagram of the prime number is also prime and that is in given range then add to anagram prime number list
     if prm.prime_check(i) and prm.prime_check(ana) and 0 <= ana <= 1000:
        queue.enqueue(i)
-# getiing the size of the stack
+# getting the size of the stack
 print("total anagram prime numbers =  ",queue.size())
 print("")
-#print the stack elements by using show function
+# print the stack elements by using show function
 queue.show()

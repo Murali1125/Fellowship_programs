@@ -55,7 +55,7 @@ que = Queue()
 # getting inputs from user
 year = int(input("year = "))
 month = int(input("month = "))
-#creating an object for calender to get the dates
+# creating an object for calender to get the dates
 cal = calender()
 dates = cal.month(year,month)
 # creating weak objects
