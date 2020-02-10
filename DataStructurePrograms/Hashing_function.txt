@@ -1,11 +1,11 @@
-remainder 0 and the values are None
-remainder 1 and the values are ,23,67,45,78,12,34
-remainder 2 and the values are ,13,90,57,35,24
+remainder 0 and the values are ,0
+remainder 1 and the values are ,23,12,45
+remainder 2 and the values are None
 remainder 3 and the values are None
 remainder 4 and the values are None
-remainder 5 and the values are ,324,49
+remainder 5 and the values are None
 remainder 6 and the values are None
 remainder 7 and the values are None
 remainder 8 and the values are None
-remainder 9 and the values are ,9,1978
-remainder 10 and the values are ,54,87,43,87,98
+remainder 9 and the values are None
+remainder 10 and the values are ,21

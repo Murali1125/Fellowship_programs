@@ -24,7 +24,7 @@ class Queue:
         # if the queue is empty, there is nothing to deque it return queue is empty
         if Queue.isEmpty(self):
             print("Queue is empty")
-            return "queue is empty"
+            return "Queue is empty"
         else:
             if self.front.next == None:
                 self.front = None
@@ -42,7 +42,7 @@ class Queue:
     def size(self):
         # if count < 0 return an error
         if self.count < 0 :
-            print("error occured restart the program")
+            print("error, restart the program")
         else:
             return self.count
     def show(self):

@@ -2,8 +2,7 @@
 ------------Linked List.------------
 ---------------------------------------"""
 
-from Fellowship_programs.DataStructurePrograms\
-    import Node
+from Fellowship_programs.DataStructurePrograms.Node import Node
 class Linkedlist:
      #the 1st element of the list is called Head
      #intilizing head = None

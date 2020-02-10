@@ -10,7 +10,7 @@ from Fellowship_programs.DataStructurePrograms import Linked_List
 #creating Object for Linked List
 list = Linked_List.Linkedlist()
 # Open and read the file
-f = open('unoderedlist.txt', 'r')
+f = open('./unoderedlist.txt', 'r')
 file = f.read().split(" ")
 f.close()
 #reading word from the user
@@ -33,7 +33,7 @@ if result:
     list.show()
     print("element removed at ",index)
     # Delete the word form the file by over writting.
-    f = open('unoderedlist.txt', 'w')
+    f = open('./unoderedlist.txt', 'w')
     f.write('')
     f.close()
     length = list.size()
@@ -49,7 +49,7 @@ else:
 
     # adding the word to file
     # open the file in append mode
-    f = open('unoderedlist.txt', 'a+')
+    f = open('./unoderedlist.txt', 'a+')
     f.write(" "+word)
     f.close()
 

@@ -19,7 +19,7 @@ class DeQueue:
         # if the inserted element is 1st element then  front_element = rare_element = given 1st element
         if self.front == None:
             self.front = self.rare = node
-        # the element will add in front possion
+        # the element will add in front possession
         node.next = self.front
         self.front = node
         self.count +=1

@@ -57,7 +57,7 @@ class Stack:
         print(self.top.data)
     # creating a function to get the size of the stack
     def size(self):
-        if self.count >= 0:
+        if self.count > 0:
             return self.count
         else:
             print("Index out of Boundary")

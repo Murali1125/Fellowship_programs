@@ -17,7 +17,7 @@ from Fellowship_programs.DataStructurePrograms.tree import BS_tree
 # creating Object for BS_tree class
 tree = BS_tree()
 # reading the values from the user
-count = int(input("Enter the number valures want to insert"))
+count = int(input("Enter the number values want to insert"))
 
 for i in range(count):
     # reading the values from the user
