@@ -33,7 +33,7 @@ if result:
     list.show()
     print("element removed at ",index)
     #Delete the word form the file by over writting.
-    f = open('Unoderedlist.txt', 'w')
+    f = open('UnoderedList.txt', 'w')
     f.write('')
     f.close()
     length = list.size()

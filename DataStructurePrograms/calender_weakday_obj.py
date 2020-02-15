@@ -8,6 +8,7 @@ from Fellowship_programs.DataStructurePrograms.Calender import calender
 from Fellowship_programs.DataStructurePrograms.Queue import Queue
 
 class Node:
+
     def __init__(self,day,date):
         self.day = day
         self.date = date
