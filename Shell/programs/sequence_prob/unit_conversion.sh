@@ -25,5 +25,5 @@ echo " area of rectangular plot(mt) = $area "
 # c
 #------
 # 1 sq.m = 0.000247105 acers
-ace=`expr "scale=2;25*0.000247105*$area"|bc`
+ace=`expr "25 * 0.000247105 * $area"|bc`
 echo " area 25 plots(acres) =$ace" 
