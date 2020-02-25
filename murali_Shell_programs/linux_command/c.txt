@@ -1,0 +1,19 @@
+*** b.txt	2020-02-20 11:15:06.259978130 +0530
+--- a.txt	2020-02-20 11:14:44.615537276 +0530
+***************
+*** 1,3 ****
+--- 1,5 ----
++ welcome
++ 
+  life isn't meant to be easy, life is meant to be lived.
+  Try to learn & understand something new everyday in life.
+  Respect everyone & most important love everyone.
+***************
+*** 5,7 ****
+--- 7,12 ----
+  Life is too short to be shy.
+  In life experience will help you differentiating right from wrong.
+  
++ 
++ Hi how rare u
++ fn
