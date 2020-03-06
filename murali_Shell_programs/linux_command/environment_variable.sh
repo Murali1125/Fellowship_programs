@@ -1,8 +1,8 @@
-#! /bin/bash -x
-
+#! /bin/bash  -x
 # check environment variable present or not
-unset $USERSECRET
-if [ -z $USERSECRET ]
+#unset USERSECRET
+export USERSECRET="sadf"
+if [[ -z "${USERSECRET}" ]]
 then
 	 export USERSECRET="dH34xjaa23"
 
@@ -11,3 +11,4 @@ else
 	echo " variable already present"
 fi
 echo $USERSECRET
+
